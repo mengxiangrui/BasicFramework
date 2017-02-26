@@ -1,0 +1,23 @@
+.tabbar_style {
+
+	display: flex;
+
+}
+
+.tabber {
+	
+	display: block;
+	flex: 1;
+	width: 50%;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: #ccc;
+
+	&:first-of-type {
+
+		border-right: 1px solid #000;
+
+	}
+
+}
