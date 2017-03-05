@@ -1,6 +1,6 @@
 import { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import { initStringFun, setStringFun } from '../actions/actions';
+import { initStringFun, setStringFun } from '../actions/index';
 
 import DemoTabBars from '../components_common/DemoTabBars/index';
 
@@ -37,8 +37,6 @@ class App extends Component {
 
 
 function appStore(state) {
-
-	console.log(state)
 
 	return {
 

@@ -4,13 +4,16 @@ import { INITSRTING,
 		INITOBJ, 
 		SETOBJ, 
 		INITARRA, 
-		SETARRAY } from '../actions/actions';
+		SETARRAY,
+		FETCH_DEMO_DATA_SUCCESS,
+		FETCH_DEMO_DATA_ERROR } from '../actions/index';
 
 let initStateData = {
 
 	string: '我是初始string',
 	obj: {},
-	array: []
+	array: [],
+	initList: []
 
 }
 
@@ -43,8 +46,29 @@ function stringFun ( state = initStateData.string, action ) {
 
 }
 
+function listData (state = initStateData.initList, action) {
+
+	switch (action.type) {
+
+		case FETCH_DEMO_DATA_SUCCESS:
+
+			return [...state, action.payload]
+
+		case FETCH_DEMO_DATA_ERROR:
+
+			return action.error
+
+		default:
+
+      		return state
+
+	}
+
+}
+
 const newsApp = combineReducers({
-  	stringFun: stringFun
+  	stringFun: stringFun,
+  	listData: listData
 })
 
 export default newsApp

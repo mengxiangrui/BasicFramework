@@ -1,6 +1,6 @@
 {
   "name": "BasicFramework",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "js/index.js",
   "scripts": {
@@ -32,8 +32,9 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.16.0",
-    "whatwg-fetch": "^1.0.0",
     "react-redux": "^4.4.5",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "redux-thunk": "^2.2.0",
+    "whatwg-fetch": "^1.0.0"
   }
 }

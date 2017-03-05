@@ -2,6 +2,11 @@
 -------------
 ######项目介绍
 * 基于react react-router redux 由webpack进行打包构建的项目基本架构
+* 版本1.0.0：
+* 	具有基础功能的react redux基础框架
+* 版本1.1.0：
+*   新建store文件，支持store middleware（自带logger, trunk）
+*	支持异步action
 
 ------------
 ######技术选型
@@ -17,12 +22,13 @@
 
 ------------
 ######项目层次
-* http://www.jianshu.com/p/52cb9cfebb98
+* 1.0.0: http://www.jianshu.com/p/52cb9cfebb98
+* 1.1.0: 暂无
 
 ------------
 #######项目作者
 * mxr
-* https://github.com/mengxiangrui
+* https://github.com/mengxiangrui/BasicFramework
 
 ------------
 #######运行方式

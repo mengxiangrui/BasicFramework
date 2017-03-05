@@ -6,12 +6,13 @@ import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { IndexRedirect, Link, Route, Router, hashHistory } from 'react-router';
 
-import reducer from './reducers/reducer.js';
+//import reducer from './reducers/reducer.js';
+import store from './store/index';
 import App from './containers/App';
 /* common style */
 import '../css/common.scss';
 
-let store = createStore(reducer);
+//let store = createStore(reducer);
 
 let rootElement = document.getElementById('root');
 
