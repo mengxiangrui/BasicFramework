@@ -30,12 +30,12 @@
 * 1.1.0: 暂无
 
 ------------
-#######项目作者
+######项目作者
 * mxr
 * https://github.com/mengxiangrui/BasicFramework
 
 ------------
-#######运行方式
+######运行方式
 * npm install
 * 开发 npm start
 * 编译 npm run build
@@ -50,7 +50,7 @@
 `.then(data => console.log(data))`
 
 -------------
-########代码提交方式
+######代码提交方式
 * svn st
 * svn add -new fils
 * svn commit -m 'FEA:iwork编号 ... '
