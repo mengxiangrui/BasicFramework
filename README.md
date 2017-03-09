@@ -7,6 +7,10 @@
 * 版本1.1.0：
 *   新建store文件，支持store middleware（自带logger, trunk）
 *	支持异步action
+* 版本1.1.2：
+*	增加mock数据功能(json-server)
+*   增加mock数据相关的mock文件夹
+*   install faker 随机生成模拟数据
 
 ------------
 ######技术选型
@@ -35,6 +39,14 @@
 * npm install
 * 开发 npm start
 * 编译 npm run build
+
+-------------
+######mock数据
+* npm install -g json-server
+* json-server mock/db.js --routes mock/db.json --watch mock/db.js
+> fetch('/api/activity?method=a')
+> .then(res => res.json())
+> .then(data => console.log(data))
 -------------
 ########代码提交方式
 * svn st
