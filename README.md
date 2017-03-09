@@ -44,9 +44,11 @@
 ######mock数据
 * npm install -g json-server
 * json-server mock/db.js --routes mock/db.json --watch mock/db.js
-> fetch('/api/activity?method=a')
-> .then(res => res.json())
-> .then(data => console.log(data))
+
+`fetch('/api/activity?method=a')`
+`.then(res => res.json())`
+`.then(data => console.log(data))`
+
 -------------
 ########代码提交方式
 * svn st
